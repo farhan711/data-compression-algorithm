@@ -81,7 +81,7 @@ dictionary to only those characters, thereby improving the compression ratio:
 
 
 
-## API
+## API for call
 
 There are two methods provided within the **LZWAsync** namespace:
 
@@ -108,9 +108,7 @@ Each method takes a single dictionary parameter which can contain the following 
 
 ## Known limitations and future work
 
-At the moment the compressor only accepts ASCII (upto 256) characters even though Javascript supports UTF-16 characters in its strings. For now, unless you can specify your required characters in the `dict` parameter, you should base64-encode your input prior to compression if it contains non-latin script.
-
-There are also dictionary optimisations which can be made to decrease the amount of memory used by the dictionary though speed will be impacted as a result.
+At the moment the compressor only accepts ASCII (upto 256) characters even though Javascript supports UTF-16 characters in its strings. 
 
 ## Useful resources
 
@@ -120,12 +118,3 @@ The following resources where enormously helpful:
 * http://warp.povusers.org/EfficientLZW/index.html
 * http://marklomas.net/ch-egg/articles/lzwjs.htm
 * http://michael.dipperstein.com/lzw/
-
-
----
-Developed by [Ramesh Nair](http://www.hiddentao.com/). Originally released July 2011.
-
-* Blog post: [Link](http://www.hiddentao.com/archives/2011/08/01/asynchronous-implementation-of-lzw-algorithm-in-javascript/).
-* Source code: [Github](https://github.com/hiddentao/lzw-async.js).
-
-
