@@ -14,7 +14,6 @@
             BitStreamWriter,
             BitStreamReader;
 
-
         /**
          * Used to build up large strings, without being able to modify existing characters.
          */
